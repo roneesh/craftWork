@@ -27,7 +27,7 @@ li { float: left;}
 
 .info-box { 
 	height: 50px; 
-	margin-right: 100px;
+	margin-right: 50px;
 	color: #999;
 	font-size: 24px;
 	display: table;
@@ -43,6 +43,11 @@ li { float: left;}
 	vertical-align: middle;
 	text-align: center;
 	padding: 0 10px;
+}
+
+.info-box .active {
+	color: white;
+	margin-top: 10px;
 }
 
 .info-text {
