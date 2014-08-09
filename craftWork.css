@@ -3,16 +3,26 @@ body {
 	background-size: cover;
 }
 
-.info-boxes { list-style-type: none;}
+.info-boxes { 
+	list-style-type: none;
+	width: 80%;
+	margin: 25px auto 0 auto;
+}
+
 li { float: left;}
 
 .info-box, .info-text { 
-	width: 200px;
+	width: 250px;
 	background-color: rgba(0,0,0,0.5);
 	color: #DDD;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	font-family: Arial;
+	padding: 0 10px;
+	font-family:'Alegreya Sans';
+	font-style:normal;
+	font-weight:400;
+	overflow: scroll;
 }
 
 .info-box { 
@@ -23,16 +33,21 @@ li { float: left;}
 	display: table;
 }
 
+.info-box:hover {
+	color: #EEE;
+	background-color: rgba(0,0,0,0.9);
+}
+
 .info-box span { 
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	padding: 0 10px;
 }
 
 .info-text {
 	display: none;
 	height: 200px;
-	overflow: auto;
 	margin-top: 10px;
 	padding: 10px 10px 0 10px;
 }
