@@ -1,49 +1,91 @@
 <html>
 
-	<head>
-		<link rel="stylesheet" type="text/css" href="craftWork.css">
-		<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Alegreya+Sans:400,500">
-		<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/EB+Garamond:400,400i/Open+Sans:400,700">
-		<script src="http://code.jquery.com/jquery-1.11.1.js" type="text/javascript"></script>
-		<script src="./craftWork.js" type="text/javascript"></script>
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Latin+Modern+Roman:400">
+	<style>
+		p { font-size: 22px; font-family: 'Latin Modern Roman'; width: 100%;}
+		div { margin: 0; margin-left: 100px;}
+		.text-box {  
+			width: 415px; 
+			overflow:scroll; 
+			height: 400px;
+			overflow-x: hidden;
+			margin-left: 0;
+		}
+		.wrapper {
+			width: 400px; 
+			overflow: hidden;
+			height: 400px; 
+			border: 10px solid white; }
+		.bottom-white {
+			height: 100px;
+			width: 415px;
+			position: relative;
+			bottom: 100px;
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, rgba(255, 255, 255, 0.0)),
+				color-stop(1, rgba(255, 255, 255, 1.0))
+			);
+		}
+		.top-white {
+			height: 100px;
+			width: 415px;
+			position: relative;
+			top: 100px;
+			visibility: hidden;
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, rgba(255, 255, 255, 1.0)),
+				color-stop(1, rgba(255, 255, 255, 0.0))
+			);
 
-	</head>
+		}
+	</style>
+</head>
+<body>
+<div class="top-white"></div>
+	<div class="wrapper">
+	<div class="text-box">
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus tincidunt purus, sed molestie arcu feugiat pretium. Duis urna nisl, hendrerit nec magna id, commodo adipiscing massa. Aliquam aliquam placerat lorem, sit amet euismod magna placerat at. Nulla tincidunt tincidunt neque, in fringilla mauris molestie id. Nunc vel eleifend dolor. Morbi id aliquet lacus. Maecenas tempor diam non metus volutpat, in placerat dui pulvinar. </p>
 
-	<body>
+		<p>Proin semper magna ut tempus consectetur. Sed ornare convallis gravida. In felis ligula, convallis eget consequat a, lacinia at velit. Curabitur risus arcu, volutpat at magna viverra, aliquam fringilla arcu. Donec ornare, felis ut posuere accumsan, enim diam bibendum purus, id ornare diam metus sit amet augue. Maecenas ultrices eros eget metus gravida, vitae luctus eros lacinia. Integer posuere magna eu ante blandit, eu volutpat purus mattis. Morbi in feugiat turpis. Sed pretium egestas fermentum. Maecenas et aliquet augue, vel adipiscing massa. Curabitur commodo dignissim enim ac faucibus. Vestibulum et varius lacus. Vivamus tempus felis sed leo vestibulum, vitae gravida turpis congue. </p>
 
-		<ul class="info-boxes">
-			<li>
-				<div class="info-box"> 
-					<span>About the Artist</span> 
-					<span> 
-						<i class="fa fa-chevron-down"></i>
-					</span>
-				</div>
-				<div class="info-text">
-					Nora Renick Rinehart is both an artist and a crafter. Her practice has included making pieces to show in galleries, selling wares online and at craft-fairs and simply making for the sheer (and often nerdy) joy of it. Her current passion is teaching all sorts of textiles here in Chicago.
-				</div>
-			</li>
-			<li>
-				<div class="info-box"> 
-					<span>About the Work</span> 
-					<span> 
-						<i class="fa fa-chevron-down"></i>
-					</span>
-				</div>
-				<div class="info-text"> 
-					Put a bird on it next level Austin sartorial. Hella PBR&B irony Etsy, wolf craft beer lo-fi ethical artisan narwhal street art kale chips church-key PBR. Ethical aesthetic messenger bag YOLO Austin, mumblecore sartorial art party semiotics. Pug Helvetica actually, keffiyeh street art YOLO Blue Bottle tofu photo booth Carles literally Tonx cray +1 crucifix. DIY Thundercats chillwave crucifix. +1 sartorial plaid, bicycle rights literally swag fixie mixtape hashtag raw denim keffiyeh. Mixtape YOLO Vice fingerstache PBR&B actually.  
-				</div>
-			</li>
-			<li> 
-				<div class="info-box">
-					<span> Images: </span>
-					<span class="active"> 1 </span>
-					<span> 2 </span>
-					<span> 3 </span>
-				</div>
-			</li>
-		</ul>
-	</body>
+		<p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique massa orci, vitae sodales neque pulvinar ac. Phasellus vulputate enim in diam aliquet, a fringilla eros blandit. Nunc posuere tincidunt nunc, vitae commodo turpis pellentesque vitae. Nunc velit lacus, adipiscing in viverra a, lobortis non arcu. Pellentesque augue erat, dictum ut mauris condimentum, semper varius magna. Nam id mollis purus. </p>
+		</div>
+	</div>
+	<div class="bottom-white"></div>
+
+	<script type="text/javascript">
+		var el = $('.text-box'), //element
+			del = $('.text-box')[0],
+			lineHeight = $('.text-box p').css('lineHeight');
+
+		el.scroll(function() {
+			if (del.scrollTop > 20) {
+				$('.top-white').css('visibility', 'visible');
+			}
+			else if (del.scrollTop < 100) {
+				$('.top-white').css('visibility', 'hidden');
+			}
+
+			if (del.scrollHeight - el.scrollTop() <= (el.outerHeight() + 22) ) {
+				$('.bottom-white').css('visibility', 'hidden');
+			}
+			else {
+				$('.bottom-white').css('visibility', 'visible');
+			}
+
+
+		});
+
+	</script>
+
+</body>
 
 </html>
