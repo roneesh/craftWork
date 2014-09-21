@@ -1,0 +1,129 @@
+ /* LECTURE STYLES*/
+
+ .lecture-body {
+ 	background-color: #efefef;
+ }
+
+.container { padding: 15px;  }
+/*p { font-size: 22px; font-family: 'Latin Modern Roman'; width: 100%; margin: 0;}*/
+.text-container, .video-container { margin-top: 25px; margin-bottom: 25px;}
+.gallery-img {
+	float: left;
+	width: 32%;
+	max-width: 140px;
+	margin: 0 2% 2% 0;
+}
+
+.gallery { margin-top: 20px; } /* NEEDS CLEARFIX */
+.text-box {  
+	width: 415px; 
+	overflow:scroll; 
+	height: 300px;
+	/*overflow-x: hidden;*/
+	margin-left: 0;
+}
+.text-box p { padding-right: 20px;}
+.wrapper {
+	/*overflow: hidden;*/
+	/*height: 300px; */
+	padding-right: 25px;
+	border: 10px solid #efefef;
+	border-top: 0; }
+.bottom-white {
+	display:none;
+	height: 100px;
+	width: 415px;
+	position: relative;
+	bottom: 100px;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(255, 255, 255, 0.0)),
+		color-stop(1, #efefef)
+	);
+}
+.top-white {
+	display:none;
+	height: 100px;
+	width: 415px;
+	position: relative;
+	/*top: 100px;*/
+	visibility: hidden;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(255, 255, 255, 1.0)),
+		color-stop(1, rgba(255, 255, 255, 0.0))
+	);
+
+}
+
+
+/*.info-box, .info-text { 
+	width: 100%;
+	min-width: 250px;
+	background-color: rgba(0,0,0,1);
+	color: #DDD;
+	padding: 0 10px;
+	font-family:'Alegreya Sans', Arial, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	overflow: scroll;
+}
+
+.info-box { 
+	height: 50px; 
+	color: #999;
+	font-size: 24px;
+	display: table;
+}
+
+.info-box:hover {
+	color: #EEE;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.site-link span { 
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0 10px;
+}
+
+.info-box .active {
+	color: white;
+	margin-top: 10px;
+}
+
+.info-text {
+	display: none;
+	height: 200px;
+	margin-top: 10px;
+	padding: 10px 10px 0 10px;
+	width: 200px;
+	position: absolute;
+}
+
+.info-text a { 
+	text-align: center;
+	color: #ddd;
+	font-family:'Alegreya Sans', Arial;
+	text-decoration: none;
+	padding: 10px;
+}
+*/
+
+@media (min-width: 768px) {
+	.gallery-img:nth-child(3n) {	
+		margin-right: 0;
+	}
+	/*.container { width: auto;}*/
+	.wrapper { border: 10px solid #efefef; }
+	.gallery-img:nth-child(3n) { margin-right: 2%; }
+	.text-container, .video-container { float: right; width: 50%; }
+	/*.text-restrictor { width: 400px;}*/
+	.text-box { max-width: 415px; height: 300px; }	
+	.bottom-white { display: block;}
+}

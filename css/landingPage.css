@@ -1,0 +1,82 @@
+
+.craftWorkLandingPage, .craftWorkLandingPage::after {
+    -webkit-animation: fadein 2s;
+      -moz-animation: fadein 2s; 
+       -ms-animation: fadein 2s; 
+        -o-animation: fadein 2s; 
+           animation: fadein 2s; 
+}
+
+.craftWorkLandingPage::after {
+  content: "";
+  background: url('../Images/schumaker.jpg');
+  background-size: cover;
+  /*opacity: 0.95;*/
+  /*-webkit-filter: blur(1px);*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.landingTextBox {
+  width: 100%;
+  margin: 20 auto;
+  background-color: rgba(0,0,0,0.8);
+  color: #EEE;
+  padding: 10px;
+}
+
+.landingBoxContainer { padding: 0 15px;}
+
+.dashBox { display: none;}
+
+hr { 
+  color: #EEE;
+}
+
+
+@media (min-width: 768px) {
+  .craftWorkLandingPage::after {
+    content: "";
+    background: url('../Images/exhibitView.jpg');
+    background-size: cover;
+    opacity: 0.95;
+    /*-webkit-filter: blur(2px);*/
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  .landingTextBox {
+    float: left;
+    /*width: 48%;*/
+    /*margin-left: 2%;*/
+    min-height: 50%;
+  }
+  .landingTextBox:first-child {
+    margin-left: 0;
+  }
+  .dashBox { 
+    width: 6%;
+    display: block;
+    text-align: center;
+  }
+  h2 { text-align: center;}
+
+  .landingBoxContainer {
+    width: 75%;
+    min-height: 100px;
+    max-height: 750px;
+    margin: 0 auto;
+  }
+}

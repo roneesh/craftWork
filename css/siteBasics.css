@@ -1,0 +1,22 @@
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+*, *:before, *:after {
+  font-family:'Alegreya Sans', Arial, sans-serif;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+body { margin: 0; padding: 0;}

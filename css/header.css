@@ -1,0 +1,18 @@
+.navbar {
+	border-radius: 0;
+	background-color: black;
+	border: 0;
+	color: white;
+}
+.navbar-header {
+	border-bottom-color: #eee;
+}
+.dropdown-toggle {
+	background-color: black;
+}
+.dropdown-toggle { 
+	color: black;
+}
+.dropdown-menu li a:hover {
+	color: white;
+}

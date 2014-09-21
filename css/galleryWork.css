@@ -1,0 +1,35 @@
+.gallery-image {
+	/*width: 50%;*/
+	float: left;
+	padding: 0 10px 10px 0;
+	/*border: 0;*/
+/*	clip: rect(0px,60px,200px,0px);
+*/}
+
+@media (min-width: 768px) {
+	.gallery-image {
+		width: 50%;
+		padding-top: 0;
+	}
+	.gallery-img:nth-child(3n) {	
+		margin-left: 0;
+	}
+	.gallery-images {
+		width: 50%;
+		float: left;
+		padding-right: 15px;
+	} 
+	.image-viewer {
+		width: 50%;
+		height: 300px;
+		background-color: #eee;
+		float: left;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.gallery-image {
+		width: 33%;
+	}
+}
