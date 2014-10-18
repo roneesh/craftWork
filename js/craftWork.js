@@ -26,4 +26,19 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.ribbon-work').on('click', function() {
+		var descriptionBlock = $(this).children('.ribbon-description'),
+			largeImageURL = descriptionBlock.data('image'),
+			imageTitle = descriptionBlock.data('title'),
+			descriptionText = descriptionBlock.html();
+			$('.ribbon-work').removeClass('selected');
+			console.log(descriptionText);
+			console.log(largeImageURL);
+			console.log(imageTitle);
+			$('.work-image img').attr('src', largeImageURL);
+			$('.text-description p').html(descriptionText);
+			$(this).addClass('selected');
+
+	});
+
 });

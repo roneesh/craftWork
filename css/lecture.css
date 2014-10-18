@@ -8,10 +8,10 @@
 /*p { font-size: 22px; font-family: 'Latin Modern Roman'; width: 100%; margin: 0;}*/
 .text-container, .video-container { margin-top: 25px; margin-bottom: 25px;}
 .gallery-img {
-	float: left;
-	width: 32%;
-	max-width: 140px;
-	margin: 0 2% 2% 0;
+	/*float: left;*/
+	width: 50%;
+	/*max-width: 140px;*/
+	margin: 10px 0;
 }
 
 .gallery { margin-top: 20px; } /* NEEDS CLEARFIX */
@@ -116,6 +116,9 @@
 */
 
 @media (min-width: 768px) {
+	.gallery-img {float: left; width: 32%;
+	max-width: 140px;
+	margin: 0 2% 2% 0;}
 	.gallery-img:nth-child(3n) {	
 		margin-right: 0;
 	}
