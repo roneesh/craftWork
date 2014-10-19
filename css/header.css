@@ -5,7 +5,7 @@
 	color: white;
 }
 .navbar-header {
-	border-bottom-color: #fff;
+	border-bottom-color: #efefef;
 }
 .dropdown-toggle {
 	background-color: black;
@@ -19,27 +19,27 @@
 
 /* BOOTSTRAP OVERRIDES COPIED FROM WEB INSPECTOR*/
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #fff;
-	border-color: #fff;
+	background-color: #efefef;
+	border-color: #efefef;
 }
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
 	background-color: black;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
+	background-color: #efefef;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	color: #fff;
+	color: #efefef;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #fff;
+	color: #efefef;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
-	background-color: #fff;
+	background-color: #efefef;
 }
 @media (max-width: 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-		color: #fff;
+		color: #efefef;
 	}
 
 }
