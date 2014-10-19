@@ -26,19 +26,54 @@ $(document).ready(function() {
 		}
 	});
 
+	var firstWork = $('.ribbon-work').first(),
+		firstDescriptionBlock = firstWork.children('.ribbon-description'),
+		firstZoomImageURL = firstDescriptionBlock.data('zoom');
+		firstImageURL = firstDescriptionBlock.data('image'),
+		workArtist = firstDescriptionBlock.data('artist'),
+		workTitle = firstDescriptionBlock.data('title'),
+		workMedium = firstDescriptionBlock.data('medium'),
+		workDate = firstDescriptionBlock.data('date');
+
+		firstWork.addClass('selected');
+		$('.work-image img').attr('src', firstImageURL);
+		$('.work-image a').attr('href', firstZoomImageURL);
+		$('.artist-name').html(workArtist)
+		$('.work-title').html(workTitle)
+		$('.work-medium').html(workMedium)
+		$('.work-date').html(workDate);
+
+	var $easyzoom = $('.easyzoom').easyZoom();
+	var api = $easyzoom.data('easyZoom');
+
 	$('.ribbon-work').on('click', function() {
 		var descriptionBlock = $(this).children('.ribbon-description'),
+			zoomImageURL = descriptionBlock.data('zoom');
 			largeImageURL = descriptionBlock.data('image'),
-			imageTitle = descriptionBlock.data('title'),
+			workArtist = descriptionBlock.data('artist'),
+			workTitle = descriptionBlock.data('title'),
+			workMedium = descriptionBlock.data('medium'),
+			workDate = descriptionBlock.data('date'),
 			descriptionText = descriptionBlock.html();
+			
+			// active image
 			$('.ribbon-work').removeClass('selected');
-			console.log(descriptionText);
-			console.log(largeImageURL);
-			console.log(imageTitle);
 			$('.work-image img').attr('src', largeImageURL);
-			$('.text-description p').html(descriptionText);
-			$(this).addClass('selected');
+			$('.work-image a').attr('href', zoomImageURL);
+			$('.artist-name').html(workArtist)
+			$('.work-title').html(workTitle)
+			$('.work-medium').html(workMedium)
+			$('.work-date').html(workDate);
+			$('.work-description').html(descriptionText);
 
+			$(this).addClass('selected');
+			api.teardown();
+			$easyzoom = $('.easyzoom').easyZoom();
+			api = $easyzoom.data('easyZoom');
 	});
+
+	// EasyZoom
+
+	
 
 });
