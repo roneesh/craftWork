@@ -5,7 +5,7 @@
 	color: white;
 }
 .navbar-header {
-	border-bottom-color: #eee;
+	border-bottom-color: #fff;
 }
 .dropdown-toggle {
 	background-color: black;
@@ -14,5 +14,32 @@
 	color: black;
 }
 .dropdown-menu li a:hover {
-	color: white;
+	color: #5e5e5e;
+}
+
+/* BOOTSTRAP OVERRIDES COPIED FROM WEB INSPECTOR*/
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #fff;
+	border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	background-color: #fff;
+}
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #fff;
+	}
+
 }
