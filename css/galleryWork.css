@@ -47,6 +47,10 @@
 .images-and-descriptions {
 	margin-top: 50px;
 }
+
+.museum-label-citation { margin: 0;}
+.museum-label-description { margin-top: 1em;}
+
 .zoomContainer {
 	display: inline-block;
 }
