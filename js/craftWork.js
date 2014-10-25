@@ -5,6 +5,13 @@ $(document).ready(function() {
 	// 		$('.nav-list').slideToggle();
 	// 	}
 	// })
+	// $.fn.ekkoLightbox.defaults({always_show_close: false});
+	$(document).delegate('.zoomContainer', 'click', function(event) {
+	    event.preventDefault();
+	    $(this).children('a').ekkoLightbox({always_show_close: false});
+	 //    $easyzoomlightbox = $('.ekko-lightbox-container div').easyZoom(),
+		// apilightbox = $easyzoomlightbox.data('easyZoom');;
+	});
 
 	var el = $('.text-description'), //jQuery element
 		del = $('.text-description')[0], //DOM element
@@ -38,6 +45,8 @@ $(document).ready(function() {
 			largeImageURL = descriptionBlock.data('image'),
 			descriptionText = descriptionBlock.html();
 			
+			$('work-description').html('');
+
 			// set active image
 			$('.work-image img').attr('src', largeImageURL);
 			$('.work-image a').attr('href', zoomImageURL);
