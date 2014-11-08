@@ -47,7 +47,7 @@ h5.title-bg button {
 }
 
 /***** Links *****/
-a, a:hover { color:#ef4f1d; }
+/*a, a:hover { color:#ef4f1d; }*/
 
 /***** Misc *****/
 i {margin-right: 3px;}
@@ -258,7 +258,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 .gallery-hover-4col,
 .gallery-hover-3col {
 	display:none; 
-	background:url(../img/gallery-item-hover.png);
+	/*background:url(../img/gallery-item-hover.png);*/
 	position:absolute; 
 	z-index: 10;
 }
