@@ -1,8 +1,23 @@
-/*Styles added by Roneesh Vashisht*/
+Styles added by Roneesh Vashisht*/
 
-@media (min-width: 1200px) {
-	.gallery-hover-3col {
-		width: 270px;
-		height: 42px;
+.gallery-hover-3col { height: 42px; z-index: 9999;}
+.gallery-icons { width: 42px;}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+	li.span4 .project-details { 
+		white-space: normal;
 	}
+}
+
+li.span4 .project-details a:hover {
+	color: #333333;
+	cursor: auto;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 270px) {
+    li.span4 .project-details {
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
 }
