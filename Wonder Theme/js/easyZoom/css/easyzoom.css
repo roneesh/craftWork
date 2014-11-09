@@ -51,17 +51,11 @@
 /**
  * EasyZoom layout variations
  */
-
-.zoomContainer { overflow: hidden; }
-
 .easyzoom--overlay .easyzoom-flyout {
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/*added*/
-	height: 1000px;
-	width: 1000px;
 }
 .easyzoom--overlay .easyzoom-flyout img {
 	height: auto;
