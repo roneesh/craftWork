@@ -1,15 +1,6 @@
 Styles added by Roneesh Vashisht*/
 
 
-
-@media (max-width: 767px) and (min-width: 270px) {
-    li.span4 .project-details {
-        width: 100%;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-    }
-}
-
 .gallery-hover-3col { height: 42px; z-index: 9999;}
 .gallery-icons { width: 42px; left: 0;}
 
