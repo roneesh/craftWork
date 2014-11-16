@@ -71,11 +71,13 @@
 	padding: 10px 0;
 	height: 120px;
 }
-.ribbon-work img { vertical-align: top;}
+.ribbon-work img { vertical-align: top; height: 100px;}
 
 .selected {
 	border-top: 5px solid rgba(0,0,0,0.6);
 }
+
+.easyzoom-flyout { width: 100%;}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 	.work-image { width: 75%; } 
@@ -87,7 +89,7 @@
 	.images-and-descriptions { display: none;}
 	.ribbon-work { display: block; height: auto;}
 	.selected { border: 0px;}
-	.image-ribbon img { clear: both; margin: 10px 0;}
+	.image-ribbon img { clear: both; margin: 10px 0; height: auto; width: 85%; margin: 0 auto;}
 	.image-ribbon {
 		width: 100%;
 		height: auto;
