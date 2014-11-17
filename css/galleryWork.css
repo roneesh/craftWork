@@ -77,12 +77,13 @@
 	border-top: 5px solid rgba(0,0,0,0.6);
 }
 
-.easyzoom-flyout { width: 100%;}
+.ekko-lightbox-container div img { margin: 0 auto;}
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	.work-image { width: 75%; } 
-	.text-description { width: 25%;}
-	/*.work-image img { max-width: 100%; height: auto; max-height: 350px;}*/
+/*	.work-image { width: 75%; } 
+	.text-description { width: 25%;}*/
+	.work-description { font-size: 16px;}
+	.work-image img { max-width: 100%; height: auto; max-height: 350px;}
 }
 
 @media (max-width: 767px) {
@@ -98,6 +99,15 @@
 	    white-space: nowrap;
 		margin-top: 25px;
 		margin-bottom: 25px;
+		text-align: center;
 	}
-	.ribbon-description { display: block; white-space: normal; }
+	.ribbon-description { 
+		display: block; 
+		white-space: normal; 
+		width: 85%; 
+		margin: 0 auto; 
+		padding: 15px;
+		background-color: rgba(30,30,30,.1) ;
+
+	}
 }
