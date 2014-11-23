@@ -41,5 +41,6 @@
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
 		color: #efefef;
 	}
+	.dropdown-menu > li > a {white-space: normal;}
 
 }
