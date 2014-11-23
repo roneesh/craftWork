@@ -9,7 +9,7 @@
 
 .craftWorkLandingPage::after {
   content: "";
-  background: url('../Images/schumaker.jpg');
+  background: url('../Images/gallery/schumaker1.jpg');
   background-size: cover;
   /*opacity: 0.95;*/
   /*-webkit-filter: blur(1px);*/
@@ -32,6 +32,7 @@
   background-color: rgba(0,0,0,0.8);
   color: #EEE;
   padding: 10px;
+  font-size: 16px;
 }
 
 .landingBoxContainer { padding: 0 15px;}
@@ -46,7 +47,7 @@ hr {
 @media (min-width: 768px) {
   .craftWorkLandingPage::after {
     content: "";
-    background: url('../Images/exhibitView.jpg');
+    background: url('../Images/exhibit/exhibitView1.jpg');
     background-size: cover;
     opacity: 0.95;
     /*-webkit-filter: blur(2px);*/
@@ -57,11 +58,16 @@ hr {
     position: absolute;
     z-index: -1;   
   }
+  .landingBoxContainer {
+    max-width: 700px;
+    margin: 0 auto;
+  }
   .landingTextBox {
     float: left;
-    /*width: 48%;*/
-    /*margin-left: 2%;*/
+    font-size: 18px;
     min-height: 50%;
+    padding: 0 20px;
+    font-size: 18px;
   }
   .landingTextBox:first-child {
     margin-left: 0;
