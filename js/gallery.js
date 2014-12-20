@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(this).delegate('.zoomContainer', 'click', function(event) {
+	$(this).delegate('.work-image', 'click', function(event) {
 	    event.preventDefault();
 	    $(this).children('a').ekkoLightbox({always_show_close: false});
 
