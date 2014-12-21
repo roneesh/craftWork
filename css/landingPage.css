@@ -9,7 +9,7 @@
 
 .craftWorkLandingPage::after {
   content: "";
-  background: url('../Images/gallery/schumaker1.jpg');
+  background: url('../images/gallery/schumaker1.jpg');
   background-size: cover;
   /*opacity: 0.95;*/
   /*-webkit-filter: blur(1px);*/
@@ -47,7 +47,7 @@ hr {
 @media (min-width: 768px) {
   .craftWorkLandingPage::after {
     content: "";
-    background: url('../Images/exhibit/exhibitView1.jpg');
+    background: url('../images/exhibit/exhibitView1.jpg');
     background-size: cover;
     opacity: 0.95;
     /*-webkit-filter: blur(2px);*/
