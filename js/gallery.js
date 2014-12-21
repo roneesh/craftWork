@@ -3,16 +3,15 @@ $(document).ready(function() {
 	$(this).delegate('.work-image', 'click', function(event) {
 	    event.preventDefault();
 	    $(this).children('a').ekkoLightbox({always_show_close: false});
-
 	});
 
 	var firstWork = $('.ribbon-work').first(),
 	firstDescriptionBlock = firstWork.children('.ribbon-description'),
-	firstZoomImageURL = firstDescriptionBlock.data('zoom');
+	firstZoomImageURL = firstDescriptionBlock.data('zoom'),
 	firstImageURL = firstDescriptionBlock.data('image'),
-	descriptionText = firstDescriptionBlock.html(),
-	// $easyzoom = $('.easyzoom').easyZoom(),
-	// api = $easyzoom.data('easyZoom');;
+	descriptionText = firstDescriptionBlock.children('.work-text').html();
+	// // $easyzoom = $('.easyzoom').easyZoom(),
+	// // api = $easyzoom.data('easyZoom');;
 
 	firstWork.addClass('selected');
 	$('.work-image img').attr('src', firstImageURL);
@@ -21,10 +20,11 @@ $(document).ready(function() {
 
 	$('.ribbon-work').on('click', function() {
 		var descriptionBlock = $(this).children('.ribbon-description'),
-			zoomImageURL = descriptionBlock.data('zoom');
+			zoomImageURL = descriptionBlock.data('zoom'),
 			largeImageURL = descriptionBlock.data('image'),
-			descriptionText = descriptionBlock.html();
+			descriptionText = descriptionBlock.children('.work-text').html();
 			
+			// clear out the work description that's currently displayed on the gallery
 			$('work-description').html('');
 
 			// set active image
