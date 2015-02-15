@@ -19,6 +19,14 @@
   right: 0;
   position: absolute;
   z-index: -1; 
+  min-height: 500px;
+}
+
+.craftWorkAboutPage {
+  content: "";
+  background: url('../images/gallery/schumaker1.jpg');
+  background-size: cover;
+  min-height: 500px;
 }
 
 @-webkit-keyframes fadein {
@@ -57,6 +65,11 @@ hr {
     right: 0;
     position: absolute;
     z-index: -1;   
+  }
+  .craftWorkAboutPage {
+    content: "";
+    background: url('../images/exhibit/exhibitView1.jpg');
+    background-size: cover;
   }
   .landingBoxContainer {
     max-width: 700px;
