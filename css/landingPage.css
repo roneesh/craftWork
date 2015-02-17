@@ -9,7 +9,7 @@
 
 .craftWorkLandingPage::after {
   content: "";
-  background: url('../images/gallery/schumaker1.jpg');
+  background: url('../images/galleryLowRes/schumaker1.jpg');
   background-size: cover;
   /*opacity: 0.95;*/
   /*-webkit-filter: blur(1px);*/
@@ -24,7 +24,7 @@
 
 .craftWorkAboutPage {
   content: "";
-  background: url('../images/gallery/schumaker1.jpg');
+  background: url('../images/galleryLowRes/schumaker1.jpg');
   background-size: cover;
   min-height: 550px;
 }
