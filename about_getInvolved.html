@@ -15,7 +15,30 @@
 	<link rel="stylesheet" type="text/css" href="./css/siteBasics.css">
 	<link rel="stylesheet" type="text/css" href="./css/header.css">
 	<link rel="stylesheet" type="text/css" href="./css/landingPage.css">
-	
+	<style>
+		.socialLinks { padding: 0;}
+		.socialLink {
+			list-style-type: none;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			padding: 0;
+			float: left;
+			display: block;
+		}
+		.tumblr, .facebook { 
+			display: block; 
+			background-image: url('./images/social-icons.png'); 
+			background-size: 430px;
+			height: 60px;
+			width: 60px;
+		}
+		.tumblr {
+			background-position-x: 122px;
+		}
+		@media (max-width: 767px) {
+			.socialLink { margin-right: 10px;}
+		}
+	</style>
 </head>
 
 <body class="craftWorkAboutPage">
@@ -70,15 +93,18 @@
 			<hr>
 			<p> Craft/Work is always looking to foster a dialogue with Artists, Crafters, Makers and the Curious. You can reach out to us at the following sites:</p>
 
-			<p>
-				<a href="http://craftworkproject.tumblr.com/press" target="_blank">			
-					craftworkproject.tumblr.com
-				</a>
-				<br/>
-				<a href="https://www.facebook.com/craftworkproject" target="_blank">
-					Craft/Work on Facebook
-				</a>
-			</p>
+			<ul class="socialLinks cf">
+				<li class="socialLink">
+					<a href="http://craftworkproject.tumblr.com/press" target="_blank" class="tumblr">		
+					</a>
+				</li>
+				
+				<li class="socialLink">
+					<a href="https://www.facebook.com/craftworkproject" target="_blank" class="facebook">
+					</a>
+				</li>
+
+			</ul>
 			<p>
 
 

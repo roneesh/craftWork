@@ -9,7 +9,7 @@
 
 .craftWorkLandingPage::after {
   content: "";
-  background: url('../images/galleryLowRes/schumaker1.jpg');
+  background: url('../images/gallery/schumaker1.jpg');
   background-size: cover;
   /*opacity: 0.95;*/
   /*-webkit-filter: blur(1px);*/
@@ -19,14 +19,14 @@
   right: 0;
   position: absolute;
   z-index: -1; 
-  min-height: 550px;
+  min-height: 1000px;
 }
 
 .craftWorkAboutPage {
   content: "";
-  background: url('../images/galleryLowRes/schumaker1.jpg');
+  background: url('../images/gallery/schumaker1.jpg');
   background-size: cover;
-  min-height: 550px;
+  min-height: 600px;
 }
 
 @-webkit-keyframes fadein {
@@ -51,7 +51,7 @@ hr {
   color: #EEE;
 }
 
-
+/* min-width 768px, because this is a mobile first CSS sheet*/
 @media (min-width: 768px) {
   .craftWorkLandingPage::after {
     content: "";
